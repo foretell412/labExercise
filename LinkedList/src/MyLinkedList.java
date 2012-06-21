@@ -51,8 +51,8 @@ public class MyLinkedList implements CpsfSimpleList{
 		else{
 			tempNext=root.next;
 			tempPrev=root.prev;
-			if (tempNext!=null) tempPrev.next=tempNext;
-			if (tempPrev!=null) tempNext.prev=tempPrev;
+			if (tempPrev!=null) tempPrev.next=tempNext;
+			if (tempNext!=null) tempNext.prev=tempPrev;
 			System.out.println("Remove element["+i+"]");
 		}
 	}
